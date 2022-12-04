@@ -1,0 +1,192 @@
+<div class="inicioDiv">
+    <div class="bgRadian">
+        <img src="/assets/images/radianMarineLogo.jpg" class="img-fluid logoImageRadian" alt="David Hacher Logo"
+            onclick="location.href='/inicio';" />
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        
+
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active ch" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ch" href="#we">Our company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ch" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ch" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ch" href="/privacy">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Main Navigation-->
+    <header>
+        <!-- Intro settings -->
+        <style>
+            /* Default height for small devices */
+            #intro {
+                height: 600px;
+                /* Margin to fix overlapping fixed navbar */
+                /*margin-top: 58px;*/
+            }
+
+            @media (max-width: 991px) {
+                #intro {
+                    /* Margin to fix overlapping fixed navbar */
+                    /*margin-top: 45px;*/
+                }
+            }
+        </style>
+
+
+
+        <!-- Background image -->
+        <div id="intro" class="p-5 text-center bg-image shadow-1-strong backGroundImageYates"
+            style="background-image: url('/assets/images/yateBanner.jpg');">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.423);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white px-4">
+                        <h1 class="mb-3">Miami's first class services</h1>
+
+                        <!-- Time Counter -->
+                        {{!-- <h3 id="time-counter" class="border border-light my-4 p-4">
+
+                        </h3> --}}
+
+                        <p>We're working hard to finish the development of this site.</p>
+
+                        <p>Until then have a look at our Front-End</p>
+
+                        <a class="btn btn-outline-light btn-lg m-2" onclick="location.href='#services';" role="button"
+                            rel="nofollow" target="_blank">Our services</a>
+                        <a class="btn btn-outline-light btn-lg m-2" onclick="location.href='#contact';" target="_blank"
+                            role="button">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Background image -->
+    </header>
+
+
+    <div id="contact">
+        <div data-draggable="true" style="position: relative;">
+            <!---->
+            <!---->
+            <section draggable="false" class="container pt-5" data-v-271253ee="">
+                <section class="mb-10 text-center">
+                    <style>
+                        hr.divider-vertical {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 1px;
+                            background-image: linear-gradient(180deg, transparent, hsl(0, 0%, 40%), transparent);
+                            background-color: transparent;
+                            height: 100%;
+                        }
+                    </style> <!-- Background image -->
+                    <div class="p-5 bg-image"
+                        style="background-image: url(/assets/images/abrigoRojo.jpg); height: 373px; background-size: cover; background-position: 50% 6%;"
+                        aria-controls="#picker-editor"></div> <!-- Background image -->
+                    <div class="card mx-4 mx-md-5 shadow-5-strong"
+                        style=" margin-top: -100px; background: hsla(0, 0%, 100%, 0.8); backdrop-filter: blur(30px); ">
+
+                        <div class="card-body py-5 px-md-5">
+                            <div class="row text-center">
+                                <h3>CONTACTA A NUESTRO EQUIPO</h3> <br> <br> <br>
+                            </div>
+                            <div class="row mb-5 redeSocialesDiv2">
+                                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 position-relative">
+                                    <!-- Facebook -->
+                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;"
+                                        href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                                    <hr class="divider-vertical d-none d-lg-block">
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 position-relative">
+                                    <!-- Twitter -->
+                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;"
+                                        href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                                    <hr class="divider-vertical d-none d-lg-block">
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 position-relative">
+                                    <!-- Instagram -->
+                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;"
+                                        href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                                    <hr class="divider-vertical d-none d-lg-block">
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 position-relative">
+                                    <!-- Linkedin -->
+                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;"
+                                        href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-6">
+                                    <form action="/ajax/email" method="POST" onsubmit="return submitEmailForm(this);">
+                                        <!-- Name input -->
+                                        <div class="form-outline mb-4"> <input type="text" id="form4Example1"
+                                                class="form-control formInput" name="name" required> <label
+                                                class="form-label" for="form4Example1"
+                                                style="margin-left: 0px;">Nombre</label>
+                                            <div class="form-notch">
+                                                <div class="form-notch-leading" style="width: 9px;"></div>
+                                                <div class="form-notch-middle" style="width: 42.4px;"></div>
+                                                <div class="form-notch-trailing"></div>
+                                            </div>
+                                        </div> <!-- Email input -->
+                                        <div class="form-outline mb-4"> <input type="email" id="form4Example2"
+                                                class="form-control formInput" name="email" required>
+                                            <label class="form-label" for="form4Example2"
+                                                style="margin-left: 0px;">Correo electrónico</label>
+                                            <div class="form-notch">
+                                                <div class="form-notch-leading" style="width: 9px;"></div>
+                                                <div class="form-notch-middle" style="width: 88.8px;"></div>
+                                                <div class="form-notch-trailing"></div>
+                                            </div>
+                                        </div> <!-- Message input -->
+                                        <div class="form-outline mb-4"> <textarea class="form-control formInput"
+                                                id="form4Example3" rows="4" name="message" required></textarea> <label
+                                                class="form-label" for="form4Example3"
+                                                style="margin-left: 0px;">Servicio de interés</label>
+                                            <div class="form-notch">
+                                                <div class="form-notch-leading" style="width: 9px;"></div>
+                                                <div class="form-notch-middle" style="width: 60px;"></div>
+                                                <div class="form-notch-trailing"></div>
+                                            </div>
+                                        </div>
+                                        <!-- Checkbox -->
+                                        <div class="form-check d-flex justify-content-center mb-4">
+                                            <input class="form-check-input me-2 formInput" type="checkbox" value=""
+                                                id="form2Example33" required />
+                                            <label class="form-check-label" for="form2Example33">
+                                                Acepto política de privacidad
+                                            </label>
+                                        </div>
+                                        <!-- Submit button -->
+                                        <button type="submit" class="btn  btn-dark btn-block"
+                                            aria-controls="#picker-editor">Enviar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!---->
+        </div>
+    </div>
+</div>
