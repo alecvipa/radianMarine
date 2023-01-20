@@ -32,12 +32,12 @@ app.set("view engine", "handlebars");
 // Routes
 app.get('/', function (req, res) {
     // res.redirect(targetBaseUrl);
-    res.render('inicio');
+    res.render('home');
 
 });
 app.get('/inicio', function (req, res) {
     // res.redirect(targetBaseUrl);
-    res.render('inicio');
+    res.render('home');
 
 });
 app.get('/:params?', function (req, res) {

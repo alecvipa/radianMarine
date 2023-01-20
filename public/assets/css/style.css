@@ -10,9 +10,26 @@
 .bgRadian{
     background-color: #1c244c;
 }
-
+.preview{
+    margin-top: 10%;
+}
+.fontBolder{
+    font-weight: bolder ;
+}
+.bgRadianGrey{
+    background-color:  #434760 !important;
+}
+.marineBg{
+    background-color: #1c244c ;
+}
 .pointer {
     cursor: pointer;
+}
+.titleFirst{
+    text-shadow: 3px 3px 4px #000000;
+}
+.trabajoMarineDiv{
+    margin-bottom: 5%;
 }
 .logoImageRadian{
     max-width: 11% !important;
