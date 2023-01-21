@@ -64,7 +64,7 @@ app.post("/ajax/email", function (request, response) {
     });
 
     
-    var htmlBody = `<h2>Correo de contacto</h2><p>Nombre: ${request.body.name} </p><p> Correo electrónico: <a href='mailto: ${request.body.email}'>${request.body.email}</a></p><p>Servicio de interés:${request.body.message} </p>`;
+    var htmlBody = `<h2>Correo de contacto</h2><p>Nombre: ${request.body.name} </p><p> Correo electrónico: <a href='mailto: ${request.body.number}'>${request.body.number}</a></p><p>Servicio de interés:${request.body.message} </p>`;
     var mail = {
         from: '"Team: Xyncs Web Studio',
         to: 'contacto@davidhacher.com',

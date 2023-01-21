@@ -43,7 +43,7 @@
             };
             obj.open("post", form.action, true);
             obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
-            obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, message: form.message.value }));
+            obj.send(JSON.stringify({ name: form.name.value, number: form.number.value, message: form.message.value }));
             alert("¡En breve te contactaremos!");
             $(".formInput").val(" ");
             return false;
@@ -89,9 +89,9 @@
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgb(0, 0, 0);">
+        <div class="text-center p-3 marineBg" >
             © 2020 Copyright:
-            <a class="text-white" href="#">David Hacher Consultants</a>
+            <a class="text-white" href="/">Radian Marine</a>
         </div>
         <!-- Copyright -->
     </footer>
